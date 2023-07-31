@@ -9,8 +9,8 @@ const InfoDetail: React.FC = () => {
 		<>
 			<div>{ id }</div>
 			<div className="mt-3">
-				{ persons.map(item => (
-					<div className="flex mt-1 gap-x-2">
+				{ persons.map((item, key) => (
+					<div className="flex mt-1 gap-x-2" key={key}>
 						<p>{ item.name }</p>
 						<p>{ item.age }</p>
 					</div>
